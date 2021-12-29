@@ -13,6 +13,9 @@
     .logo{
         height: 65%;
     }
+    .logo:hover{
+        transform: rotate(3deg) scale(1.2);
+    }
     .ul{
         align-items: center;
         height: 100%;
@@ -36,12 +39,14 @@
                 padding: .5rem;
                 color: white;
                 text-decoration: none;
+                transition: all .3s ease ;
             }  
         }
         .menu_item:hover,.menu_item.active{
             
             border-bottom: 2px solid white;
             a{
+                transition: all .3s ease;
                 color: $primary_color;
             }
         }
