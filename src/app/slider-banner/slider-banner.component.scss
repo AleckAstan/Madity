@@ -44,7 +44,6 @@
             margin-bottom: 2rem;
         }
         .slider_button{
-            
             text-decoration: none;
             color: white;
             padding: 1rem 2rem;
@@ -54,6 +53,7 @@
             text-transform: uppercase;
             border-radius: 50px;
             transition: all .3s ease;
+            font-weight: normal;
         }
         .slider_button:hover{
             background: darken($primary_color,20%);
@@ -67,6 +67,7 @@
         margin-bottom: 2rem;
         color: white;
         font-weight: 700;
+        font-size: 1.3rem;
         left: 0;
         margin-left: 4rem;
         span{
