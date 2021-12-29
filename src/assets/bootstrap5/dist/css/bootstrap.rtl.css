@@ -629,7 +629,7 @@ progress {
   width: 100%;
   padding-left: var(--bs-gutter-x, 0.75rem);
   padding-right: var(--bs-gutter-x, 0.75rem);
-  margin-left: auto;
+   
   margin-right: auto;
 }
 
@@ -8406,7 +8406,7 @@ textarea.form-control-lg {
   }
 
   .p-sm-5 {
-    padding: 3rem !important;
+ 
   }
 
   .px-sm-0 {
@@ -9057,7 +9057,7 @@ textarea.form-control-lg {
   }
 
   .p-md-5 {
-    padding: 3rem !important;
+ 
   }
 
   .px-md-0 {
@@ -9708,7 +9708,7 @@ textarea.form-control-lg {
   }
 
   .p-lg-5 {
-    padding: 3rem !important;
+ 
   }
 
   .px-lg-0 {
@@ -10359,7 +10359,7 @@ textarea.form-control-lg {
   }
 
   .p-xl-5 {
-    padding: 3rem !important;
+ 
   }
 
   .px-xl-0 {
@@ -11010,7 +11010,7 @@ textarea.form-control-lg {
   }
 
   .p-xxl-5 {
-    padding: 3rem !important;
+ 
   }
 
   .px-xxl-0 {

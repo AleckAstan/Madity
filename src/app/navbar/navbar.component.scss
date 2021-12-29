@@ -1,0 +1,51 @@
+@import "../../assets/scss_init.scss";
+#a_navbar{
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    position: fixed;
+    background-color: transparent;
+    height: 4rem;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    .logo{
+        height: 65%;
+    }
+    .ul{
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        font-weight: bold;
+        font-size: .8rem;
+        justify-content: flex-end;
+        
+
+        .menu_item{ 
+            margin-left: .6rem;
+            margin-top: 1px;
+            padding: .4rem 0;
+
+            transition: all .3s ease;
+            border-bottom: 2px solid transparent;
+            a{
+                font-family: 'Urbanist', sans-serif;
+                padding: .5rem;
+                color: white;
+                text-decoration: none;
+            }  
+        }
+        .menu_item:hover,.menu_item.active{
+            
+            border-bottom: 2px solid white;
+            a{
+                color: $primary_color;
+            }
+        }
+    }
+    
+    
+}
