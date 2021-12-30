@@ -12,10 +12,11 @@
     align-items: center;
     .logo{
         height: 70%;
+        &:hover{
+            transform: rotate(3deg) scale(1.2);
+        }
     }
-    .logo:hover{
-        transform: rotate(3deg) scale(1.2);
-    }
+
     .ul{
         align-items: center;
         height: 100%;
@@ -25,7 +26,6 @@
         font-weight: bold;
         font-size: .9rem;
         justify-content: flex-end;
-        
 
         .menu_item{ 
             margin-left: .6rem;
@@ -39,17 +39,18 @@
                 color: white;
                 text-decoration: none;
                 transition: all .3s ease ;
-            }  
-        }
-        .menu_item:hover,.menu_item.active{
-            
-            border-bottom: 2px solid white;
-            a{
-                transition: all .3s ease;
-                color: $primary_color;
+            }
+            &:hover,&.active{
+                border-bottom: 2px solid white;
+                a{
+                    transition: all .3s ease;
+                    color: $primary_color;
+                }
             }
         }
     }
-    
-    
 }
+
+
+
+@import "./navbar.responsive.scss";
