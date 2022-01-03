@@ -3,7 +3,7 @@ import { AfterViewInit, Component, Inject, OnInit } from '@angular/core';
 
 declare var navbar_js : any;
 function test(){
-  const nav = document.getElementById('a_navbar');
+  const nav = document.getElementById('navbar');
   console.log(nav);
   
   window.addEventListener('scroll', () => {
@@ -23,13 +23,13 @@ export class NavbarComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     
-    const a_navbar  = document.querySelector('.a_navbar') ;
+    const navbar  = document.querySelector('.navbar') ;
 
-    if(window.scrollY<150){
-      a_navbar?.setAttribute("style", "background-color: transparent;");
-      a_navbar?.classList .remove("navbar_scrolled");
+    if(window.scrollY<100){
+      navbar?.setAttribute("style", "background-color: transparent;");
+      navbar?.classList .remove("navbar_scrolled");
     }else{
-      a_navbar?.classList .add("navbar_scrolled");
+      navbar?.classList .add("navbar_scrolled");
     }
 
     window.addEventListener('scroll',(e)=>{
@@ -38,10 +38,10 @@ export class NavbarComponent implements AfterViewInit {
     let scroll =  window.scrollY;
     console.log(scroll);
     if(scroll<150){
-      a_navbar?.setAttribute("style", "background-color: transparent;");
-      a_navbar?.classList .remove("navbar_scrolled");
+      navbar?.setAttribute("style", "background-color: transparent;");
+      navbar?.classList .remove("navbar_scrolled");
     }else{
-      a_navbar?.classList .add("navbar_scrolled");
+      navbar?.classList .add("navbar_scrolled");
     }
     })
   }

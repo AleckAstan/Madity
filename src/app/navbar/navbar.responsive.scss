@@ -3,7 +3,7 @@
     .a_navbar{
         margin-top: .5rem;
         padding:0 2rem;
-        .logo{
+        .navbar-brand{
             height: 60%;
         }
     }
@@ -13,7 +13,7 @@
         .ul{
             display:none;
         }
-        .logo{
+        .navbar-brand{
             height:80%;
         }
     }
@@ -22,7 +22,7 @@
     .a_navbar{
         padding:0 1rem;
         height: 3rem;
-        .logo{
+        .navbar-brand{
             height:70%;
         }
     }
