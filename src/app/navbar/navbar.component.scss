@@ -12,9 +12,11 @@
     position: sticky;
     background-color: transparent;
     top: 0;
+    transition: all .3s ease;
     .container-fluid{
         .navbar-brand{
             &:hover{
+                transition: all .3s ease;
                 transform: rotate(3deg) scale(1.2);
             }
             img{
@@ -56,8 +58,8 @@
 }
 .navbar.navbar_scrolled{
     background-color: $primary_color!important;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
     margin: 0;
     .collapse{
 
