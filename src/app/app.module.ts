@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderBannerComponent } from './slider-banner/slider-banner.component';
+import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SliderBannerComponent
+    SliderBannerComponent,
+    QuiSommesNousComponent
   ],
   imports: [
     BrowserModule
