@@ -1,8 +1,10 @@
 @import "../../assets/scss_init.scss";
-#a_navbar{
-    margin-top: 1rem;
+.a_navbar{
+    z-index: 2;
+    padding-top: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    margin: 0;
     display: flex;
     position: fixed;
     background-color: transparent;
@@ -29,13 +31,17 @@
 
         .menu_item{ 
             margin-left: .6rem;
-            margin-top: 1px;
-            padding: .4rem 0;
+            margin-top: .8rem;
+            padding-top: 0;
+            padding-bottom: .2rem;
+            padding-left: 0;
+            padding-right: 0;
             transition: all .3s ease;
             border-bottom: 2px solid transparent;
             a{
                 font-family: 'Urbanist', sans-serif;
-                padding: .5rem;
+                padding-bottom: .5rem;
+                padding-left: .5rem;
                 color: white;
                 text-decoration: none;
                 transition: all .3s ease ;
@@ -50,7 +56,25 @@
         }
     }
 }
-
+.a_navbar.navbar_scrolled{
+    background-color: $primary_color!important;
+    padding-top: 0;
+    margin: 0;
+    .logo{
+        height: 60%;
+    }
+    .ul{
+        .menu_item{
+            &:hover,&.active{
+                border-bottom: 2px solid white;
+                a{
+                    transition: all .3s ease;
+                    color: white;
+                }
+            }
+        }
+    }
+}
 
 
 @import "./navbar.responsive.scss";
