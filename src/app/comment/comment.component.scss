@@ -1,0 +1,57 @@
+.background-icon {
+    position: absolute;
+    right: 0;
+    left: 0;
+    opacity: 0.1;
+    width: 25vw;
+    height: auto;
+}
+
+.commentGrid {
+    padding: 0 2rem;
+    padding-top: 2.2rem;
+}
+
+.commentSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.commentRow {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.textCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.commentDescription {
+    text-align: center;
+}
+
+.commentIcon {
+    width: 4rem;
+    height: auto;
+}
+
+.commentMore {
+    padding: 0.5rem 3rem;
+    background-color: transparent;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    color: red;
+    border: red solid 0.2rem;
+}
+
+.imageCard {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+}

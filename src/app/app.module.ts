@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SliderBannerComponent } from './slider-banner/slider-banner.component';
 import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
 import { TestingComponentComponent } from './testing-component/testing-component.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,11 @@ import { TestingComponentComponent } from './testing-component/testing-component
     NavbarComponent,
     SliderBannerComponent,
     QuiSommesNousComponent,
-    TestingComponentComponent
+    TestingComponentComponent,
+    CommentComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
