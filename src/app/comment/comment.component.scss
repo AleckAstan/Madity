@@ -5,6 +5,9 @@
     opacity: 0.1;
     width: 25vw;
     height: auto;
+    -webkit-animation: rotation 60s linear infinite;
+    -moz-animation: rotation 60s linear infinite;
+    -ms-animation: rotation 60s linear infinite;
 }
 
 .commentGrid {
@@ -16,11 +19,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw;
 }
 
 .commentRow {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    max-width: 100vw;
 }
 
 .textCard {
@@ -33,6 +41,7 @@
 
 .commentDescription {
     text-align: center;
+    color: #3a261c;
 }
 
 .commentIcon {
@@ -45,8 +54,8 @@
     background-color: transparent;
     border-radius: 3rem;
     text-transform: uppercase;
-    color: red;
-    border: red solid 0.2rem;
+    color: #f4623a;
+    border: #f4623a solid 0.2rem;
 }
 
 .imageCard {
@@ -54,4 +63,94 @@
     max-height: 100%;
     max-width: 100%;
     width: 100%;
+}
+
+.commentSection .title {
+    color: #3a261c;
+}
+
+.commentTitle {
+    color: #3a261c;
+    text-align: center;
+}
+
+.clockContainer {
+    position: relative;
+}
+
+.clock {
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    width: 20vw;
+    height: auto;
+    opacity: 0.1;
+}
+
+.clock-hour {
+    -webkit-animation: rotation 60s linear infinite;
+    -moz-animation: rotation 60s linear infinite;
+    -ms-animation: rotation 60s linear infinite;
+}
+
+.clock-minute {
+    -webkit-animation: rotation 20s linear infinite;
+    -moz-animation: rotation 20s linear infinite;
+    -ms-animation: rotation 20s linear infinite;
+}
+
+
+/**************************ANIMATION**************************/
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes rotation {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+
+/***********************RESPONSIVE*********************/
+
+@media only screen and (max-width: 1080px) {
+    .commentRow {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .textCard {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .fourth {
+        grid-row: 4;
+    }
 }
