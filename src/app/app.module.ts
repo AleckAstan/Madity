@@ -7,6 +7,7 @@ import { SliderBannerComponent } from './slider-banner/slider-banner.component';
 import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
 import { TestingComponentComponent } from './testing-component/testing-component.component';
 import { CommentComponent } from './comment/comment.component';
+import { MoreInformationComponent } from './more-information/more-information.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CommentComponent } from './comment/comment.component';
     QuiSommesNousComponent,
     TestingComponentComponent,
     CommentComponent,
+    MoreInformationComponent,
   ],
   imports: [BrowserModule],
   providers: [],

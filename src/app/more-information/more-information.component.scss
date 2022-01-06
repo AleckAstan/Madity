@@ -1,0 +1,46 @@
+@import "../../assets/scss_init.scss";
+.more-information-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark_color;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.left {
+    flex: 1;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.left a {
+    color: $primary_color;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.left a:hover {
+    color: rgb(255, 180, 94);
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    object-fit: cover;
+    height: 60vh;
+    width: 40vw;
+    width: auto;
+}

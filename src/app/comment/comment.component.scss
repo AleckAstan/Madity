@@ -1,4 +1,8 @@
 @import "../../assets/scss_init.scss";
+.title {
+    margin-top: 2rem;
+}
+
 .background-icon {
     position: absolute;
     right: 0;
@@ -51,10 +55,18 @@
 
 .commentMore {
     padding: 0.5rem 3rem;
+    margin-top: 1rem;
     background-color: transparent;
     border-radius: 3rem;
     text-transform: uppercase;
     color: $primary_color;
+    border: $primary_color solid 0.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.commentMore:hover {
+    background-color: $primary_color;
+    color: white;
     border: $primary_color solid 0.2rem;
 }
 
