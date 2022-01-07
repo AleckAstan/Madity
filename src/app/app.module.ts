@@ -8,6 +8,7 @@ import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.compon
 import { TestingComponentComponent } from './testing-component/testing-component.component';
 import { CommentComponent } from './comment/comment.component';
 import { MoreInformationComponent } from './more-information/more-information.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MoreInformationComponent } from './more-information/more-information.co
     TestingComponentComponent,
     CommentComponent,
     MoreInformationComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],
