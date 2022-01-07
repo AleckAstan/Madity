@@ -1,75 +1,113 @@
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1800px) {
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+        padding: 0;
+        margin: 0 6rem;
+        left: 0;
+        right: 0;
+        padding-top: 5rem;
+        h1 {
+            font-size: 3.4rem;
+            text-align: start;
+            font-weight: 700;
+        }
+        a {
+            align-self: start;
+            padding: 0.8rem 2.2rem;
+            margin: 1rem 0;
+        }
+        .carousel-indicators {
+            align-self: start;
+            button {
+                width: 4rem;
+            }
+        }
+    }
+    .xp {
+        margin: 2rem 3rem;
+    }
+}
 
-    .slider_cover{
-        .slider_comp{
-            .slider_title{
-                font-weight: 700;
-                font-size: 3rem;
-                margin-bottom: 1.8rem;
-            }
-            .slider_button{
-                padding: 1rem 2rem;
-                font-size: 1rem;
-            }
+@media only screen and (max-width: 1050px) {
+    .carousel-caption {
+        margin: 0 3rem;
+        h1 {
+            font-size: 3rem;
         }
-        .xp20 p{
-            margin-bottom: 2rem;
-            font-weight: 700;
-            font-size: 1.25rem;
-            margin-left: 2rem;
+        a {
+            padding: 0.6rem 2rem;
+        }
+    }
+    .xp {
+        margin: 2rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-caption {
+        a {
+            align-self: start;
+            padding: 0.6rem 2rem;
+            margin: 1rem 0;
         }
     }
 }
-@media only screen and (max-width: 660px){
-    .slider_cover{
-        .slider_comp{
-            .slider_title{
-                font-weight: 600;
-                font-size: 2.8rem;
-                margin-bottom: 1.7rem;
-            }
-            .slider_button{
-                padding: .9rem 1.8rem;
-                font-size: 1rem;
-            }
-        }
-        .xp20 p{
-            margin-bottom: 2rem;
-            font-weight: 700;
-            font-size: 1.25rem;
-            margin-left: 2rem;
+
+@media only screen and (max-width: 514px) {
+    .carousel-caption {
+        h1 {
+            font-size: 1.65rem;
         }
     }
 }
-@media only screen and (max-width: 425px){
-    .slider_cover{
-        .slider_comp{
-            .slider_title{
-                font-weight: 700;
-                font-size: 2.3rem;
-                margin-bottom: 1.7rem;
-            }
-            .slider_button{
-                padding: .8rem 1.4rem;
-                font-size: 1rem;
-            }
+
+@media only screen and (max-width: 425px) {
+    .carousel-caption {
+        margin: 0 2rem;
+        h1 {
+            font-size: 1.8rem;
         }
-        .xp20 p{
-            margin-bottom: 2rem;
-            font-weight: 700;
-            font-size: 1rem;
-            margin-left: 2rem;
+        a {
+            padding: 0.6rem 1.4rem;
+        }
+        .carousel-indicators {
+            button {
+                width: 3.7rem;
+            }
         }
     }
 }
-@media only screen and (max-width: 375px){
-    .slider_cover{
-        .slider_comp{
-            .slider_title{
-                font-weight: 700;
-                font-size: 2rem;
-                margin-bottom: 1.5rem;
+
+@media only screen and (max-width: 290px) {
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0 1rem;
+        left: 0;
+        right: 0;
+        padding-top: 5rem;
+        h1 {
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        a {
+            padding: 0.4rem 1rem;
+        }
+        .carousel-indicators {
+            button {
+                width: 3.4rem;
             }
         }
+    }
+    .xp {
+        display: none;
     }
 }

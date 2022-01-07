@@ -6696,7 +6696,7 @@ fieldset:disabled .btn {
 
 .carousel-indicators .active {
     opacity: 1;
-    background-color: red;
+    background-color: #f4623a;
 }
 
 .carousel-caption {

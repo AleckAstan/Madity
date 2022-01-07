@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-comment',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./comment.component.scss'],
 })
 export class CommentComponent {
+  faArrowRight = faArrowRight;
   constructor() {}
 }

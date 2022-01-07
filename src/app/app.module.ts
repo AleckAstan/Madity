@@ -9,6 +9,7 @@ import { TestingComponentComponent } from './testing-component/testing-component
 import { CommentComponent } from './comment/comment.component';
 import { MoreInformationComponent } from './more-information/more-information.component';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { FooterComponent } from './footer/footer.component';
     MoreInformationComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

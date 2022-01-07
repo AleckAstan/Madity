@@ -70,3 +70,36 @@ p {
     background-color: transparent;
     border: $primary_color solid 0.2rem;
 }
+
+.center .icon {
+    color: $primary_color;
+    margin-right: 0.5rem;
+}
+
+.center .social-links .links li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.center .social-links .links li a .social-icon {
+    transition: all 0.2s ease-in-out;
+}
+
+.center .social-links .links li:hover a .social-icon {
+    color: white;
+}
+
+.center .social-links .links {
+    display: flex;
+}
+
+.center .social-links .social-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
