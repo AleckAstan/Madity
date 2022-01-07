@@ -1,19 +1,54 @@
 .myMatCarousel1{
-    background-color: blue;
+    background-color: transparent;
     /* padding-top: 50px; */
-    height: 500px;
+    height: 550px;
     width: 100%;
 }
-.myMatCarousel2{
-    background-color: green;
-    /* padding-top: 50px; */
-    height: 350px;
-    width: 100%;
-}
+
 .myMatCarouselSlide1{
     margin-top: 30px;
 }
-.myMatCarouselSlide2{
-    margin-top: 30px;
-    height: 300px;
+
+@media screen and (max-width:720px){
+    .myMatCarouselSlide1{
+        justify-content: stretch;
+    }    
+}
+.myCard{
+    color:white;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-monstera-6238233.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.myCard1{
+    color:white;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-picha-stock-3894377.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.myCard2{
+    color:white;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-rodnae-productions-6517359.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.myCard3{
+    color:white;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-picha-stock-3894378.jpg);
+    background-size: cover;
+    height: 500px;
+}
+p{
+    text-align: left;
+    text-size-adjust: initial;
+    font-family: Urbanist;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+a{
+    font-family: Urbanist;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #F4623A;
 }

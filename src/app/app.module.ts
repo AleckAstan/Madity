@@ -10,10 +10,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { SliderCardMdbComponent } from './slider-card-mdb/slider-card-mdb.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 const appRoutes : Routes = [
   {path:'qui-sommes-nous' , component : QuiSommesNousComponent}
@@ -25,9 +27,11 @@ const appRoutes : Routes = [
     SliderBannerComponent,
     QuiSommesNousComponent,
     TestingComponentComponent,
-    SliderCardComponent
+    SliderCardComponent,
+    SliderCardMdbComponent
   ],
   imports: [
+    [IvyCarouselModule],
     BrowserModule,
     RouterModule.forRoot(appRoutes),
      MatButtonModule,
@@ -36,7 +40,8 @@ const appRoutes : Routes = [
     MatCarouselModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    
+    MDBBootstrapModule.forRoot(),
+    MatCarouselModule.forRoot()
   ],
   providers: [
 

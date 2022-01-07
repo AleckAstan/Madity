@@ -1,0 +1,64 @@
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    width: 200px;
+}
+.content-card-container{
+    height:100%;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-monstera-6238233.jpg);
+    background-size: cover;
+}
+.content-card-container.img2{
+    height:100%;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-picha-stock-3894377.jpg);
+    background-size: cover;
+}
+.content-card-container.img3{
+    height:100%;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-rodnae-productions-6517359.jpg);
+    background-size: cover;
+}
+.content-card-container.img4{
+    height:100%;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.334), rgba(22, 22, 22, 0.781)), url(../../assets/images/pexels-picha-stock-3894378.jpg);
+    background-size: cover;
+}
+.carousel-cells{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+
+}
+.content-card-container{
+    margin:40px;
+}
+.content-card{
+    display: flex;
+    align-items:center;
+    justify-content:end;
+    padding: 20px;
+    height: 413px;
+    flex-direction:column;
+}
+
+.content-card > a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+    text-decoration:none;
+    color:#F4623A;
+    font-family: Urbanist;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.content-card > p{
+    color:rgb(255, 255, 255);
+    text-align: left;
+    text-size-adjust: initial;
+    font-family: Urbanist;
+    font-weight: lighter;
+    font-size: 1rem;
+}
