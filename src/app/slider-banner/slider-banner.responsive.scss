@@ -33,6 +33,9 @@
 }
 
 @media only screen and (max-width: 1050px) {
+    .container-fluid {
+        background-color: red;
+    }
     .carousel-caption {
         margin: 0 3rem;
         h1 {

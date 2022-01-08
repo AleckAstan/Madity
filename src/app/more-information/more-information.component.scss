@@ -44,3 +44,19 @@
     width: 40vw;
     width: auto;
 }
+
+
+/***********************RESPONSIVE*********************/
+
+@media only screen and (max-width: 1080px) {
+    .more-information-section {
+        flex-direction: column;
+    }
+    .more-information-section .right img {
+        margin: 1rem;
+        height: 80vw;
+    }
+    .left p {
+        font-size: medium;
+    }
+}

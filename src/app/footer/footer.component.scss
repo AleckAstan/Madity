@@ -1,6 +1,5 @@
 @import "../../assets/scss_init.scss";
 .footer-section {
-    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +15,6 @@ p {
     margin-bottom: 1rem;
 }
 
-.left,
 .center,
 .right {
     margin-left: 3rem;
@@ -24,6 +22,9 @@ p {
 
 .left {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left img {
@@ -46,7 +47,12 @@ p {
     flex-direction: column;
 }
 
+.mail-input {
+    display: flex;
+}
+
 .mail-input input {
+    flex: 2;
     outline: none;
     margin-right: 0.2rem;
 }
@@ -57,6 +63,7 @@ p {
 
 .mail-input button {
     padding: 0.3rem;
+    flex: 1;
 }
 
 .mail-input button {
@@ -100,6 +107,53 @@ p {
 
 a {
     text-decoration: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***********************RESPONSIVE*********************/
+
+@media only screen and (max-width: 1080px) {
+    .footer-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .left,
+    .center,
+    .right {
+        margin-left: 0;
+        padding-bottom: 1.5rem;
+    }
+    .center,
+    .right {
+        align-items: center;
+    }
+    .description {
+        text-align: center;
+    }
+    .links {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links li {
+        margin-right: 0;
+    }
+    .mail-input {
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+    }
+    .mail-input input {
+        margin-right: 0;
+        margin-bottom: 0.6rem;
+    }
+    .left img {
+        max-width: 30%;
+        width: 80%;
+    }
 }

@@ -31,8 +31,7 @@
 .commentRow {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-    max-width: 100vw;
+    grid-template-rows: 24% 24% 24% 28%;
 }
 
 .textCard {
@@ -40,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 4rem;
+    padding: 0 4vw;
 }
 
 .commentDescription {
@@ -61,7 +60,7 @@
     text-transform: uppercase;
     color: $primary_color;
     border: $primary_color solid 0.2rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .commentMore:hover {
@@ -155,8 +154,8 @@
 
 @media only screen and (max-width: 1080px) {
     .commentRow {
-        display: grid;
         grid-template-columns: 100%;
+        grid-template-rows: auto;
     }
     .fourth {
         grid-row: 4;
@@ -167,5 +166,9 @@
     .imageCardContainer {
         margin: 0;
         padding: 0;
+    }
+    .commentRow div {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }
