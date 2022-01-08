@@ -5,7 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SliderBannerComponent } from './slider-banner/slider-banner.component';
 import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
 import { TestingComponentComponent } from './testing-component/testing-component.component';
-import { SliderCardComponent } from './slider-card/slider-card.component';
+
 import { RouterModule, Routes } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
@@ -15,11 +15,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderCardMdbComponent } from './slider-card-mdb/slider-card-mdb.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
-const appRoutes : Routes = [
-  {path:'qui-sommes-nous' , component : QuiSommesNousComponent}
-]
+const appRoutes: Routes = [
+  { path: 'qui-sommes-nous', component: QuiSommesNousComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,25 +27,22 @@ const appRoutes : Routes = [
     SliderBannerComponent,
     QuiSommesNousComponent,
     TestingComponentComponent,
-    SliderCardComponent,
-    SliderCardMdbComponent
+    SliderCardMdbComponent,
   ],
   imports: [
     [IvyCarouselModule],
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-     MatButtonModule,
+    MatButtonModule,
     MatDividerModule,
     MatCardModule,
     MatCarouselModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
   ],
-  providers: [
-
-  ],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
