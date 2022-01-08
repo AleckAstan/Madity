@@ -20,6 +20,7 @@ import { SliderCardMdbComponent } from './slider-card-mdb/slider-card-mdb.compon
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { ProjectComponent } from './project/project.component';
 
 const appRoutes: Routes = [
   { path: 'qui-sommes-nous', component: QuiSommesNousComponent },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     MoreInformationComponent,
     FooterComponent,
     SliderCardMdbComponent,
+    ProjectComponent,
   ],
   imports: [
     [IvyCarouselModule],

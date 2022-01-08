@@ -1,0 +1,65 @@
+@import "../../assets/scss_init.scss";
+.project-container {
+    padding: 3rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    color: $dark_color;
+}
+
+.project-card {
+    display: flex;
+}
+
+.left,
+.right {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+}
+
+.right .right-image,
+.left .left-image {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.left {
+    position: relative;
+}
+
+.visit {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: $primary-color;
+    border: none;
+    padding: 0.8rem 1.9rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.visit:hover {
+    background-color: #d8451d;
+}
+
+@media only screen and (max-width: 1080px) {
+    .project-card {
+        flex-direction: column;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .visit {
+        position: relative;
+        bottom: 3rem;
+        right: 0;
+    }
+}
