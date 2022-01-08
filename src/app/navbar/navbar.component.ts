@@ -37,8 +37,19 @@ export class NavbarComponent implements AfterViewInit {
       navbar?.classList.add('navbar_scrolled');
     }
 
-    window.addEventListener('scroll', (e) => {
-      console.log(e);
+    window.addEventListener('scroll',() => {
+      // console.log(e);
+      
+    let scroll =  window.scrollY;
+    // console.log(scroll);
+    if(scroll<150){
+      navbar?.setAttribute("style", "background-color: transparent;");
+      navbar?.classList .remove("navbar_scrolled");
+    }else{
+      navbar?.classList .add("navbar_scrolled");
+    }
+    })
+  }
 
       let scroll = window.scrollY;
       console.log(scroll);
