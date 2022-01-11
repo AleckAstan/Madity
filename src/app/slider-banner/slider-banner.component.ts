@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slider-banner',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderBannerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
   }

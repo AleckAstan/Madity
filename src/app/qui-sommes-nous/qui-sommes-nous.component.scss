@@ -3,12 +3,15 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 3rem;
     color: white;
     // background-color: $primary_color;
 }
-
+.title{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 .for-background-image {
     background: url("../../assets/images/logo.png");
     background-size: contain;
@@ -25,7 +28,12 @@
     position: relative;
 }
 
-.who .title,
+.title{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 .who p {
     padding-bottom: 2rem;
 }
@@ -48,4 +56,8 @@
     background-color: transparent;
     color: white;
     border: white solid 0.2rem;
+}
+.title_content{
+    text-align: left;
+    align-items: start;
 }

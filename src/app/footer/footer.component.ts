@@ -10,6 +10,7 @@ import {
   faEnvelope,
   faMapMarkerAlt,
   faPhone,
+  faArrowUp
 } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-footer',
@@ -25,5 +26,6 @@ export class FooterComponent {
   faPhone = faPhone;
   faMail = faEnvelope;
   faLocation = faMapMarkerAlt;
+  faArrowUp = faArrowUp;
   constructor() {}
 }

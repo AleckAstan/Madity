@@ -82,7 +82,12 @@ p {
     color: $primary_color;
     margin-right: 0.5rem;
 }
-
+.arrow-icon{
+    color:#F4623A;
+}
+.arrows{
+    justify-content: end;
+}
 .center .social-links .links li {
     list-style: none;
     margin-right: 2rem;
@@ -111,6 +116,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 
 
 /***********************RESPONSIVE*********************/

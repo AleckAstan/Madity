@@ -4,12 +4,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderBannerComponent } from './slider-banner/slider-banner.component';
 import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
-import { TestingComponentComponent } from './testing-component/testing-component.component';
 import { CommentComponent } from './comment/comment.component';
 import { MoreInformationComponent } from './more-information/more-information.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 import { RouterModule, Routes } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
@@ -21,9 +19,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ProjectComponent } from './project/project.component';
+import { TechnoComponent } from './techno/techno.component';
 
 const appRoutes: Routes = [
-  { path: 'qui-sommes-nous', component: QuiSommesNousComponent },
+  { path: '', component: QuiSommesNousComponent },
 ];
 @NgModule({
   declarations: [
@@ -31,12 +30,12 @@ const appRoutes: Routes = [
     NavbarComponent,
     SliderBannerComponent,
     QuiSommesNousComponent,
-    TestingComponentComponent,
     CommentComponent,
     MoreInformationComponent,
     FooterComponent,
     SliderCardMdbComponent,
     ProjectComponent,
+    TechnoComponent,
   ],
   imports: [
     [IvyCarouselModule],

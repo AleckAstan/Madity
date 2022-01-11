@@ -1,6 +1,7 @@
 @import "../../assets/scss_init.scss";
 .title {
     margin-top: 2rem;
+    font-size: 2rem;
 }
 
 .background-icon {
@@ -148,7 +149,9 @@
         -ms-transform: rotate(360deg);
     }
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
 
 /***********************RESPONSIVE*********************/
 
